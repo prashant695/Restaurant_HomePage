@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+#logo img {
+    margin: 8px;
+    padding: 14px 16px 15px 16px;
+    height: 92px;
+    width: 116px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', 'cursive';
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 12%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    height: 650px;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("home_bg.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: azure;
+}
+
+#home p {
+    color: azure;
+    font-size: larger;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    border-radius: 20px;
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(232 232 232);
+    transition: all 1s ease-in-out .1s;
+}
+
+#services .box:hover {
+    box-shadow: 10px 13px 15px 0.1px rgb(90, 83, 26);
+
+
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+.client-section {
+    height: 320px;
+}
+
+.client-section::before {
+    content: "";
+    position: absolute;
+    background: url(home_bg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+.client-item img {
+    height: 150px;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#contact {
+    position: relative;
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url("contact.jfif") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+input,
+textarea {
+    font-family: 'Baloo Bhai', 'cursive';
+    text-align: center;
+    display: block;
+    width: 307px;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+
+footer {
+
+    background-color: black;
+    color: blanchedalmond;
+
+}
+
+.h-primary {
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai', 'cursive';
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn {
+    color: beige;
+    margin: 44px 3px;
+    padding: 11px 20px;
+    background-color: black;
+    color: bisque;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    font-family: 'Baloo Bhai', 'cursive';
+}
+
+.btn:hover {
+    background-color: rgb(116, 7, 7);
+    ;
+}
+
+.center {
+    text-align: center;
+}
